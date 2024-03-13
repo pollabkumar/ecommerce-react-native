@@ -4,6 +4,8 @@ import Icon from 'react-native-vector-icons/dist/MaterialIcons';
 import Icon2 from 'react-native-vector-icons/dist/Ionicons';
 import Icon3 from 'react-native-vector-icons/dist/Fontisto';
 import Icon4 from 'react-native-vector-icons/dist/Feather';
+import { useDispatch } from 'react-redux';
+import { addItemToCart } from '../redux/CartSlice';
 
 const ReadMore = ({ text, maxLength }) => {
 
@@ -33,6 +35,7 @@ const ReadMore = ({ text, maxLength }) => {
 const ProductDetails = ({ navigation }) => {
 
     const longText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime adipisci temporibus, obcaecati fugit est voluptas ut cupiditate recusandae! Quia tempore vitae eius consequatur. Maiores quasi est quibusdam expedita obcaecati tempore"
+    const dispatch = useDispatch();
 
     return (
         <View style={{ flex: 1 }}>
@@ -168,7 +171,7 @@ const ProductDetails = ({ navigation }) => {
                         <Text style={{ color: "#959595", fontWeight: "500", fontSize: 15 }}>Price</Text>
                         <Text style={{ color: "#fff", fontSize: 22, fontWeight: "500" }}>₹2250</Text>
                     </View>
-                    <TouchableOpacity style={{ backgroundColor: "#e27e45", paddingVertical: 12, borderRadius: 100, paddingHorizontal: 20, flexDirection: "row" }} onPress={() => navigation.navigate("Cart")}>
+                    <TouchableOpacity style={{ backgroundColor: "#e27e45", paddingVertical: 12, borderRadius: 100, paddingHorizontal: 20, flexDirection: "row" }} >
                         <Icon2
                             name="cart"
                             style={{

@@ -41,7 +41,7 @@ const Home = ({ navigation }) => {
             }));
 
             setProducts(productsWithQty);
-            console.log(productsWithQty);
+            // console.log(productsWithQty);
             setLoading(false);
         } catch (error) {
             console.error('Error fetching products:', error);

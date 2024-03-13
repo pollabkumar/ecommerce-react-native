@@ -63,10 +63,10 @@ const Registration = ({ navigation }) => {
                 {/* Bottom */}
                 <ScrollView style={{ height: "55%", backgroundColor: "#031518", borderTopLeftRadius: 50, borderTopRightRadius: 50, }}>
 
-                    <View style={{ marginTop: 50, }}>
+                    <View style={{ marginTop: 40, }}>
 
                         <View style={{ paddingHorizontal: 30 }}>
-                            <Text style={{ color: "#fff", marginBottom: 10, fontSize: 17, fontWeight: "500" }}>Enter your Username</Text>
+                            <Text style={{ color: "#fff", marginBottom: 7, fontSize: 15, fontWeight: "500" }}>Enter your Username</Text>
                             <TextInput
                                 style={styles.input}
                                 onChangeText={(value) => setUsername(value)}
@@ -77,7 +77,7 @@ const Registration = ({ navigation }) => {
                         </View>
 
                         <View style={{ paddingHorizontal: 30, marginTop: 25 }}>
-                            <Text style={{ color: "#fff", marginBottom: 10, fontSize: 17, fontWeight: "500" }}>Enter your Email address</Text>
+                            <Text style={{ color: "#fff", marginBottom: 7, fontSize: 15, fontWeight: "500" }}>Enter your Email address</Text>
                             <TextInput
                                 style={styles.input}
                                 onChangeText={(value) => setEmail(value)}
@@ -89,7 +89,7 @@ const Registration = ({ navigation }) => {
                         </View>
 
                         <View style={{ paddingHorizontal: 30, marginTop: 25 }}>
-                            <Text style={{ color: "#fff", marginBottom: 10, fontSize: 17, fontWeight: "500" }}>Enter your Password</Text>
+                            <Text style={{ color: "#fff", marginBottom: 7, fontSize: 15, fontWeight: "500" }}>Enter your Password</Text>
                             <TextInput
                                 style={styles.input}
                                 onChangeText={(value) => setPassword(value)}
@@ -124,11 +124,11 @@ const Registration = ({ navigation }) => {
                         {/* Submit */}
                         <View style={{ marginTop: 30, justifyContent: "center", flexDirection: "row", alignItems: "center", }}>
                             <TouchableOpacity
-                                style={{ backgroundColor: "#e47f46", paddingVertical: 8, borderRadius: 50, width: "50%", }}
+                                style={{ backgroundColor: "#e47f46", paddingVertical: 7, borderRadius: 50, width: "45%", }}
                                 // onPress={() => storeData()}
                                 onPress={() => navigation.navigate("Home")}
                             >
-                                <Text style={{ color: "#000", textAlign: "center", fontWeight: "500", fontSize: 18, letterSpacing: 0.3 }}>Submit</Text>
+                                <Text style={{ color: "#000", textAlign: "center", fontWeight: "500", fontSize: 16, letterSpacing: 0.3 }}>Submit</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -145,7 +145,7 @@ export default Registration
 const styles = StyleSheet.create({
     input: {
         padding: 3,
-        fontSize: 14,
+        fontSize: 13,
         color: '#E0F7FA',
         fontWeight: '500',
         paddingLeft: 10,
